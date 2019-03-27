@@ -1,0 +1,8 @@
+@function toRgba($color, $alpha: 0.3) {
+    @return rgba(red($color), green($color), blue($color), $alpha);
+}
+
+@function largeBoxShadow($color, $alpha: 0.3) {
+    $darken: darken($color, 20%);
+    @return 0 6px 18px toRgba($darken, $alpha);
+}

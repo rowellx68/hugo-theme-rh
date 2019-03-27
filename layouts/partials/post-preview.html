@@ -1,0 +1,6 @@
+<div class="post-preview box has-corners-large">
+    <h2 class="title is-4">{{ .Title }}</h2>
+    <p>{{ emojify (.Summary | plainify | htmlUnescape) }}</p>
+
+    <a href="{{ .URL }}" aria-label="{{ .Title }}" class="post-preview-link"></a>
+</div>

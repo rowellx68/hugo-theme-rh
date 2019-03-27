@@ -1,0 +1,22 @@
+{
+  "name": "hugo-theme-rh",
+  "version": "1.0.0",
+  "description": "A custom theme for Rowell's blog.",
+  "main": "index.js",
+  "author": "Rowell Heria <rowell.heria@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "parcel src/**/style.scss src/**/site.ts -d static",
+    "build": "rimraf static/js static/css && parcel build src/**/style.scss src/**/site.ts --no-source-maps -d static"
+  },
+  "dependencies": {
+    "bulma": "^0.7.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "sass": "^1.17.3",
+    "typescript": "^3.3.4000"
+  }
+}

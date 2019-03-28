@@ -5,13 +5,15 @@
         <div class="column">
             {{ $items := (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") }}
             {{ $paginated := .Paginate $items $.Site.Params.paginateBlog }}
+            <div>
             {{ range $paginated.Pages }}
-                {{ partial "post-preview.html" . }}
+            {{ partial "blog/post-preview.html" . }}
             {{ end }}
+            </div>
             {{ partial "pagination.html" . }}
         </div>
         <div class="column is-4 is-hidden-mobile">
-            <div class="box has-corners-large"></div>
+            {{ partial "shared/tag-cloud.html" . }}
         </div>
     </div>
 </main>

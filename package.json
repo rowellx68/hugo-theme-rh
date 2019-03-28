@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "rimraf static/dev && parcel src/dev.html -d static/dev",
-    "build": "rimraf static && parcel build src/**/style.scss src/**/site.ts --no-source-maps -d static"
+    "build": "parcel build src/**/style.scss src/**/site.ts --no-source-maps -d static"
   },
   "dependencies": {
     "bulma": "^0.7.4"

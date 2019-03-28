@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class="container is-fluid">
+<div class="columns">
+    <div class="blog-content column">
+        <h1 class="title is-3">{{ .Params.displayTitle }}</h1>
+        <div class="tags">
+        {{ range .Params.tags }}
+            <span class="tag is-primary is-rounded">{{ . }}</span>
+        {{ end }}
+        </div>
+        <article class="content">
+            {{ .Content }}
+        </article>
+    </div>
+    <div class="column is-4 is-hidden-mobile">
+        {{ partial "blog/other-posts.html" . }}
+    </div>
+</div>
+</main>
+{{ partial "footer.html" . }}

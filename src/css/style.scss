@@ -6,66 +6,66 @@
 @import "./bulma-custom";
 
 html {
-    overflow: auto;
-    font-size: 1.1rem;
+  overflow: auto;
+  font-size: 1.1rem;
 }
 
 html,
 body {
-    &.has-navbar-fixed-top {
-        padding-top: 58px;
-    }
+  &.has-navbar-fixed-top {
+    padding-top: 58px;
+  }
 }
 
 main {
-    &.container {
-        margin: 0.75rem;
-    }
+  &.container {
+    margin: 0.75rem;
+  }
 }
 
 footer {
-    &.is-white {
-        background: $white;
-    }
+  &.is-white {
+    background: $white;
+  }
 }
 
 .post-preview {
-    position: relative;
+  position: relative;
 
-    &-link {
-        border-radius: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+  &-link {
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .title {
+    &:first-of-type {
+      margin-bottom: 0.8rem;
     }
 
-    .title {
-        &:first-of-type {
-            margin-bottom: 0.80rem;
-        }
-
-        &.published-date {
-            margin-top: 0.80rem;
-            margin-bottom: 0;
-        }
+    &.published-date {
+      margin-top: 0.8rem;
+      margin-bottom: 0;
     }
+  }
 
-    .tags {
-        margin-bottom: 0;
-    }
+  .tags {
+    margin-bottom: 0;
+  }
 }
 
 .blog-content {
-    .title {
-        margin-bottom: 0.80rem;
-    }
+  .title {
+    margin-bottom: 0.8rem;
+  }
 }
 
 .highlight {
-    padding: 1.25rem;
-    background-color: $highlight-color-bg;
-    border-radius: 1rem;
-    box-shadow: largeBoxShadow($primary, 0.1);
+  padding: 1.25rem;
+  background-color: $highlight-color-bg;
+  border-radius: 1rem;
+  box-shadow: largeBoxShadow($primary, 0.1);
 }

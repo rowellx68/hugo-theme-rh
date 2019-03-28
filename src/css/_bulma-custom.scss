@@ -1,86 +1,86 @@
 .navbar {
-    &.is-fixed-top {
-        box-shadow: 0 1px 2px rgba($black, 0.1);
-    }
+  &.is-fixed-top {
+    box-shadow: 0 1px 2px rgba($black, 0.1);
+  }
 
-    .navbar-burger {
-        span {
-            height: 2px;
-        }
+  .navbar-burger {
+    span {
+      height: 2px;
     }
+  }
 }
 
 .button {
-    &.is-outlined {
-        border-width: 2px;
-    }
+  &.is-outlined {
+    border-width: 2px;
+  }
 }
 
 .box {
-    &.has-corners-large {
-        border-radius: 1rem;
-        box-shadow: largeBoxShadow($primary, 0.1);
+  &.has-corners-large {
+    border-radius: 1rem;
+    box-shadow: largeBoxShadow($primary, 0.1);
+  }
+
+  &.is-primary {
+    background-color: $primary;
+    color: $primary-invert;
+    box-shadow: largeBoxShadow($primary, 0.4);
+
+    * {
+      color: $primary-invert;
     }
+  }
 
-    &.is-primary {
-        background-color: $primary;
-        color: $primary-invert;
-        box-shadow: largeBoxShadow($primary, 0.4);
+  &.is-danger {
+    background-color: $danger;
+    color: $danger-invert;
+    box-shadow: largeBoxShadow($danger);
 
-        * {
-            color: $primary-invert;
-        }
+    * {
+      color: $danger-invert;
     }
+  }
 
-    &.is-danger {
-        background-color: $danger;
-        color: $danger-invert;
-        box-shadow: largeBoxShadow($danger);
+  &.is-warning {
+    background-color: $warning;
+    color: $warning-invert;
+    box-shadow: largeBoxShadow($warning);
 
-        * {
-            color: $danger-invert;
-        }
+    * {
+      color: $warning-invert;
     }
+  }
 
-    &.is-warning {
-        background-color: $warning;
-        color: $warning-invert;
-        box-shadow: largeBoxShadow($warning);
+  &.is-success {
+    background-color: $success;
+    color: $success-invert;
+    box-shadow: largeBoxShadow($success);
 
-        * {
-            color: $warning-invert;
-        }
+    * {
+      color: $success-invert;
     }
+  }
 
-    &.is-success {
-        background-color: $success;
-        color: $success-invert;
-        box-shadow: largeBoxShadow($success);
+  &.is-info {
+    background-color: $info;
+    color: $info-invert;
+    box-shadow: largeBoxShadow($info);
 
-        * {
-            color: $success-invert;
-        }
+    * {
+      color: $info-invert;
     }
-
-    &.is-info {
-        background-color: $info;
-        color: $info-invert;
-        box-shadow: largeBoxShadow($info);
-
-        * {
-            color: $info-invert;
-        }
-    }
+  }
 }
 
 .tag {
-    &.is-rounded {
-        border-radius: 1rem;
-    }
+  &.is-rounded {
+    border-radius: 1rem;
+  }
 }
 
 .title {
-    &.has-margin-bottom-small {
-        margin-bottom: 0.8rem;
-    }
+  &.has-margin-bottom-small {
+    margin-bottom: 0.8rem;
+  }
 }

@@ -1,0 +1,11 @@
+{{ $original := .Resources.GetMatch (.Params.headerImage) }}
+{{ $options := "600x" }}
+<div class="post-preview box has-corners-large is-image-full">
+  <figure class="image is-4by3">
+    {{ if ne $original nil }}
+    {{ $image := ($original.Resize $options) }}
+    <img src="{{ $image.RelPermalink }}">
+    {{ end }}
+  </figure>
+  <a href="{{ .URL }}" aria-label="{{ .Title }}" class="post-preview-link"></a>
+</div>

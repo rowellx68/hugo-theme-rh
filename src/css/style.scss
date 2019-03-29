@@ -41,6 +41,14 @@ footer {
     left: 0;
   }
 
+  &.is-image-full {
+    padding: 0;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+
   .title {
     &:first-of-type {
       margin-bottom: 0.8rem;

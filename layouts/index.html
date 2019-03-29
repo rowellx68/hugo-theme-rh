@@ -3,6 +3,14 @@
 <main class="container is-fluid">
   <div class="columns">
     <div class="column">
+      <div class="columns is-multiline">
+        {{ range first $.Site.Params.paginateIndex (where (where $.Site.Pages "Type" "in" "[see]") "Kind" "page") }}
+        <div class="column is-4">
+        {{ partial "see/post-preview.html" . }}
+        </div>
+        {{ end }}
+      </div>
+
       {{ $items := (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") }}
       {{ $paginated := .Paginate $items $.Site.Params.paginateBlog }}
       <div>

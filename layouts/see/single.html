@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class="container is-fluid">
+  <div class="columns">
+    <div class="blog-content column">
+      <h1 class="title is-3">{{ .Params.displayTitle }}</h1>
+      <h2 class="subtitle is-6 published-date has-text-grey-light">Published {{ .PublishDate.Format "January 02, 2006" }}</h2>
+      <article class="content">
+        {{ .Content }}
+      </article>
+    </div>
+    <div class="column is-4 is-hidden-mobile">
+      {{ partial "blog/other-posts.html" . }}
+    </div>
+  </div>
+</main>
+{{ partial "footer.html" . }}

@@ -19,7 +19,7 @@ body {
 
 main {
   &.container {
-    margin: 0.75rem;
+    padding: 0.75rem;
   }
 }
 
@@ -68,6 +68,23 @@ footer {
 .blog-content {
   .published-date {
     font-weight: 600;
+  }
+}
+
+.sidebar {
+  .title {
+    &:first-of-type {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .sidebar-links {
+    display: block;
+    padding-bottom: 0.25rem;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 }
 

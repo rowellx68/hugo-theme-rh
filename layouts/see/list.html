@@ -1,6 +1,22 @@
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
-<main class="container is-fluid">
-
+<main class="container">
+  <div class="columns">
+    <div class="column">
+      {{ $items := (where (where $.Site.Pages "Type" "in" "[see]") "Kind" "page") }}
+      {{ $paginated := .Paginate $items $.Site.Params.paginateSee }}
+      <div class="columns is-multiline">
+        {{ range $paginated.Pages }}
+        <div class="column is-4">
+        {{ partial "see/post-preview.html" . }}
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "pagination.html" . }}
+    </div>
+    <div class="column is-4 is-hidden-mobile">
+      {{ partial "shared/tag-cloud.html" . }}
+    </div>
+  </div>
 </main>
 {{ partial "footer.html" . }}

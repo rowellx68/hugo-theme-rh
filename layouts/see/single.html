@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
-<main class="container is-fluid">
+<main class="container">
   <div class="columns">
     <div class="blog-content column">
       <h1 class="title is-3">{{ .Params.displayTitle }}</h1>
@@ -10,7 +10,7 @@
       </article>
     </div>
     <div class="column is-4 is-hidden-mobile">
-      {{ partial "blog/other-posts.html" . }}
+      {{ partial "see/other-posts.html" . }}
     </div>
   </div>
 </main>

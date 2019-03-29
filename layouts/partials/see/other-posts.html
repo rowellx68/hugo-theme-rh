@@ -1,6 +1,6 @@
 <div class="box has-corners-large sidebar">
   <div class="title is-5">Other Posts</div>
-  {{ $items := (where (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") "Permalink" "!=" .Permalink ) }}
+  {{ $items := (where (where (where $.Site.Pages "Type" "in" "[see]") "Kind" "page") "Permalink" "!=" .Permalink ) }}
   {{ range first 10 $items }}
     <a href="{{ .Permalink }}" class="sidebar-links">{{ .Title }}</a>
   {{ end }}

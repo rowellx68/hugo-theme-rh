@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
-<main class="container is-fluid">
+<main class="container">
   <div class="columns">
     <div class="column">
       {{ $items := (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") }}

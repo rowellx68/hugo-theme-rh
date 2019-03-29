@@ -1,10 +1,10 @@
 <div class="box has-corners-large">
-    <div class="title is-5 has-margin-bottom-small">Tags</div>
-    <div class="tags">
-        {{ range $taxonomy := $.Site.Taxonomies.tags.Alphabetical }}
-        {{ with $.Site.GetPage (printf "/tags/%s" $taxonomy.Name )}}
-        <a href="{{ .Permalink  }}" class="tag is-rounded is-primary">{{ $taxonomy.Name }}</a>
-        {{ end }}
-        {{ end }}
-    </div>
+  <div class="title is-5 has-margin-bottom-small">Tags</div>
+  <div class="tags">
+    {{ range $taxonomy := $.Site.Taxonomies.tags.Alphabetical }}
+    {{ with $.Site.GetPage (printf "/tags/%s" $taxonomy.Name )}}
+    <a href="{{ .Permalink  }}" class="tag is-rounded is-primary">{{ lower (humanize $taxonomy.Name) }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
 </div>

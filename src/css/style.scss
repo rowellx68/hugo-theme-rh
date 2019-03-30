@@ -27,6 +27,10 @@ footer {
   &.is-white {
     background: $white;
   }
+
+  .footer-social-item {
+    margin: 0 0.75rem;
+  }
 }
 
 .post-preview {

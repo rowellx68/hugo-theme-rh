@@ -1,6 +1,4 @@
-{{ partial "header.html" . }}
-{{ partial "navigation.html" . }}
-<main class="container">
+{{ define "main" }}
   <div class="columns">
     <div class="column">
       {{ $items := (where (where $.Site.Pages "Type" "in" "[see]") "Kind" "page") }}
@@ -8,15 +6,14 @@
       <div class="columns is-multiline">
         {{ range $paginated.Pages }}
         <div class="column is-4">
-        {{ partial "see/post-preview.html" . }}
+        {{ partial "see/post-preview" . }}
         </div>
         {{ end }}
       </div>
-      {{ partial "pagination.html" . }}
+      {{ partial "pagination" . }}
     </div>
     <div class="column is-4 is-hidden-mobile">
-      {{ partial "shared/tag-cloud.html" . }}
+      {{ partial "shared/tag-cloud" . }}
     </div>
   </div>
-</main>
-{{ partial "footer.html" . }}
+{{ end }}

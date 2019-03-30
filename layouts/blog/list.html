@@ -1,20 +1,17 @@
-{{ partial "header.html" . }}
-{{ partial "navigation.html" . }}
-<main class="container">
-  <div class="columns">
-    <div class="column">
-      {{ $items := (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") }}
-      {{ $paginated := .Paginate $items $.Site.Params.paginateBlog }}
-      <div>
-        {{ range $paginated.Pages }}
-        {{ partial "blog/post-preview.html" . }}
-        {{ end }}
-      </div>
-      {{ partial "pagination.html" . }}
+{{ define "main" }}
+<div class="columns">
+  <div class="column">
+    {{ $items := (where (where $.Site.Pages "Type" "in" "[blog]") "Kind" "page") }}
+    {{ $paginated := .Paginate $items $.Site.Params.paginateBlog }}
+    <div>
+      {{ range $paginated.Pages }}
+      {{ partial "blog/post-preview" . }}
+      {{ end }}
     </div>
-    <div class="column is-4 is-hidden-mobile">
-      {{ partial "shared/tag-cloud.html" . }}
-    </div>
+    {{ partial "pagination" . }}
   </div>
-</main>
-{{ partial "footer.html" . }}
+  <div class="column is-4 is-hidden-mobile">
+    {{ partial "shared/tag-cloud" . }}
+  </div>
+</div>
+{{ end }}

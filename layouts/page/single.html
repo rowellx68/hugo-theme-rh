@@ -1,17 +1,14 @@
-{{ partial "header.html" . }}
-{{ partial "navigation.html" . }}
-<main class="container">
-  <div class="columns">
-    <div class="column">
-      <h1 class="title is-3">{{ .Params.displayTitle }}</h1>
+{{ define "main" }}
+<div class="columns">
+  <div class="column">
+    <h1 class="title is-3">{{ .Params.displayTitle }}</h1>
 
-      <article class="content">
-        {{ .Content }}
-      </article>
-    </div>
-    <div class="column is-4 is-hidden-mobile">
-      <div class="box has-corners-large"></div>
-    </div>
+    <article class="content">
+      {{ .Content }}
+    </article>
   </div>
-</main>
-{{ partial "footer.html" . }}
+  <div class="column is-4 is-hidden-mobile">
+    <div class="box has-corners-large"></div>
+  </div>
+</div>
+{{ end }}

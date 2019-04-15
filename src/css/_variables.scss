@@ -1,6 +1,35 @@
-$primary: #5f27cd;
+@import "~nord/src/sass/nord";
+
+$primary: $nord8;
 // $primary: #ee5253;
 // $primary: #ff9f43;
 // $primary: #b71540;
 
-$highlight-color-bg: #fafafa;
+$highlight-color-bg: $nord1;
+
+$body-background-color: $nord0;
+$text: $nord5;
+$text-strong: $text;
+$link: $nord7;
+$link-hover: $nord10;
+$border: $nord2;
+
+$box-background-color: $nord1;
+$code-background: $nord1;
+$code: $nord11;
+
+$pre-background: $code-background;
+$pre: $code;
+
+$title-color: $nord5;
+$subtitle-color: $nord4;
+
+$navbar-background-color: $nord0;
+$navbar-item-color: $nord5;
+$navbar-item-hover-color: $nord5;
+$navbar-item-hover-background-color: $nord1;
+
+$footer-background-color: $nord0;
+
+$content-heading-color: $nord5;
+$content-blockquote-background-color: $nord1;

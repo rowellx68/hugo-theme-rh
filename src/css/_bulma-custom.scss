@@ -4,6 +4,14 @@
   }
 
   .navbar-burger {
+    &:hover {
+      background-color: $nord1;
+
+      span {
+        background-color: $nord4;
+      }
+    }
+
     span {
       height: 2px;
     }
@@ -19,7 +27,7 @@
 .box {
   &.has-corners-large {
     border-radius: 1rem;
-    box-shadow: largeBoxShadow($primary, 0.1);
+    box-shadow: largeBoxShadow($nord0, 0.2);
   }
 
   &.is-primary {
@@ -74,6 +82,12 @@
 }
 
 .tag {
+  &:not(body) {
+    &.is-primary {
+      color: $nord0;
+    }
+  }
+
   &.is-rounded {
     border-radius: 1rem;
   }
@@ -83,4 +97,9 @@
   &.has-margin-bottom-small {
     margin-bottom: 0.8rem;
   }
+}
+
+code,
+pre {
+  border-radius: 4px;
 }

@@ -11,7 +11,8 @@
     "build": "parcel build src/**/style.scss src/**/site.ts --no-source-maps -d static"
   },
   "dependencies": {
-    "bulma": "^0.7.4"
+    "bulma": "^0.7.4",
+    "nord": "^0.2.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",

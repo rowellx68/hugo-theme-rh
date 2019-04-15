@@ -1,3 +1,9 @@
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedin, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+library.add(faLinkedin, faInstagram, faGithub);
+dom.watch();
+
 namespace HugoThemeRh {
   // tslint:disable-next-line:variable-name
   const ShareBaseLinks = {

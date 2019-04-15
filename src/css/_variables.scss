@@ -1,5 +1,15 @@
 @import "~nord/src/sass/nord";
 
+$nord-bg-dark: #242933;
+
+$cyan: $nord8;
+$blue: $nord10;
+$red: $nord11;
+$orange: $nord12;
+$yellow: $nord13;
+$green: $nord14;
+$purple: $nord15;
+
 $primary: $nord8;
 // $primary: #ee5253;
 // $primary: #ff9f43;
@@ -7,7 +17,7 @@ $primary: $nord8;
 
 $highlight-color-bg: $nord1;
 
-$body-background-color: $nord0;
+$body-background-color: $nord-bg-dark;
 $text: $nord5;
 $text-strong: $text;
 $link: $nord7;
@@ -24,12 +34,14 @@ $pre: $code;
 $title-color: $nord5;
 $subtitle-color: $nord4;
 
-$navbar-background-color: $nord0;
+$navbar-background-color: $nord-bg-dark;
 $navbar-item-color: $nord5;
 $navbar-item-hover-color: $nord5;
 $navbar-item-hover-background-color: $nord1;
+$navbar-item-active-color: $nord5;
+$navbar-item-active-background-color: $nord1;
 
-$footer-background-color: $nord0;
+$footer-background-color: $nord-bg-dark;
 
 $content-heading-color: $nord5;
 $content-blockquote-background-color: $nord1;

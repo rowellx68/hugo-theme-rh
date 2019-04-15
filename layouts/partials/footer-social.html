@@ -1,6 +1,8 @@
 <div class="footer-social has-text-centered is-size-4">
   {{ range .Site.Menus.social }}
-  <a href="{{ .URL }}" class="fab fa-{{ .Name | lower }} footer-social-item" target="_blank" aria-label="{{ .Name }}"
-    title="{{ .Name }}"></a>
+  <a href="{{ .URL }}" class="footer-social-item" target="_blank" aria-label="{{ .Name }}"
+    title="{{ .Name }}">
+    <i class="fab fa-{{ .Name | lower }}"></i>
+  </a>
   {{ end }}
 </div>

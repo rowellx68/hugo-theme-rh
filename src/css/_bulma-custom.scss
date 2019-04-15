@@ -27,13 +27,13 @@
 .box {
   &.has-corners-large {
     border-radius: 1rem;
-    box-shadow: largeBoxShadow($nord0, 0.2);
+    // box-shadow: largeBoxShadow($nord0, 0.2);
   }
 
   &.is-primary {
     background-color: $primary;
     color: $primary-invert;
-    box-shadow: largeBoxShadow($primary, 0.4);
+    // box-shadow: largeBoxShadow($primary, 0.4);
 
     * {
       color: $primary-invert;
@@ -43,7 +43,7 @@
   &.is-danger {
     background-color: $danger;
     color: $danger-invert;
-    box-shadow: largeBoxShadow($danger);
+    // box-shadow: largeBoxShadow($danger);
 
     * {
       color: $danger-invert;
@@ -53,7 +53,7 @@
   &.is-warning {
     background-color: $warning;
     color: $warning-invert;
-    box-shadow: largeBoxShadow($warning);
+    // box-shadow: largeBoxShadow($warning);
 
     * {
       color: $warning-invert;
@@ -63,7 +63,7 @@
   &.is-success {
     background-color: $success;
     color: $success-invert;
-    box-shadow: largeBoxShadow($success);
+    // box-shadow: largeBoxShadow($success);
 
     * {
       color: $success-invert;
@@ -73,7 +73,7 @@
   &.is-info {
     background-color: $info;
     color: $info-invert;
-    box-shadow: largeBoxShadow($info);
+    // box-shadow: largeBoxShadow($info);
 
     * {
       color: $info-invert;
